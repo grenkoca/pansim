@@ -16,11 +16,11 @@ from population import *
 from population import Person
 from population import make_neighbor_tree
 # Initialize window dimensions
-height = 500
-width = 500
+height = 400
+width = 400
 
 # Initialize population
-pop_size = 50
+pop_size = 100
 population = [Person(np.random.rand()*width, np.random.rand()*height, width, height) for _ in range(pop_size)]
 population[round(np.random.rand() * pop_size)].set_status(Status.I)  # 
 
